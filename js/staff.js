@@ -30,8 +30,6 @@ function getAge(strDoB) {
     myYear = myDate.getFullYear();
     myMonth = myDate.getMonth() + 1;
     myDay = myDate.getDate();
-    console.dir(`${myYear}-${myMonth}-${myDay}`);
-    console.dir(`${dob[0]}-${dob[1]}-${dob[2]}`);
     let age = myYear - dob[0];
     if (myMonth <= dob[1]) {
         if (myMonth == dob[1]) {
