@@ -33,8 +33,12 @@ function getAge(strDoB) {
     console.dir(`${myYear}-${myMonth}-${myDay}`);
     console.dir(`${dob[0]}-${dob[1]}-${dob[2]}`);
     let age = myYear - dob[0];
-    if (myMonth < dob[1]) {
-        age -= 1;
+    if (myMonth <= dob[1]) {
+        if (myMonth == dob[1]) {
+            if (myDay < dob[2]){
+                age -= 1;
+            }
+        }
     }
     return age;
 }
